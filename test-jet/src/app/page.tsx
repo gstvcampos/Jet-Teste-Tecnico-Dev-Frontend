@@ -1,4 +1,4 @@
-import CarRow from '@/components/productRow'
+import CarRow from '@/components/CarRow'
 import { cars } from '@/db/cars'
 import { Car } from '@/types/car'
 

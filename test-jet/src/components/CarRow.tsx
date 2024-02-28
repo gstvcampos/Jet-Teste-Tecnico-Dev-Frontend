@@ -1,5 +1,6 @@
 import { Car } from '@/types/car'
 import Image from 'next/image'
+import Rating from './Rating'
 
 export default function CarRow({ car }: { car: Car }) {
   return (
@@ -23,7 +24,9 @@ export default function CarRow({ car }: { car: Car }) {
       </td>
       <td>{car.nextReservation}</td>
       <td>{car.status}</td>
-      <td>{car.rating}</td>
+      <td>
+        <Rating rating={car.rating} />
+      </td>
       <th>
         <button className="btn btn-ghost btn-xs">details</button>
       </th>
