@@ -2,6 +2,7 @@ export const cars = [
   {
     id: '1',
     name: 'Mini Cooper 2020',
+    imgSrc: '/mini-cooper.png',
     nextReservation: '10/07',
     status: 'Available',
     rating: 2,
@@ -9,6 +10,7 @@ export const cars = [
   {
     id: '2',
     name: 'Celta 2000',
+    imgSrc: '/celta-2000.png',
     nextReservation: '06/07',
     status: 'Available',
     rating: 3,
@@ -16,6 +18,7 @@ export const cars = [
   {
     id: '3',
     name: 'Fiat 147',
+    imgSrc: '/fiat-147.png',
     nextReservation: '02/03',
     status: 'Unavailable',
     rating: 2,
@@ -23,6 +26,7 @@ export const cars = [
   {
     id: '4',
     name: 'Marea Turbo 2007',
+    imgSrc: '/marea-turbo.png',
     nextReservation: '05/03',
     status: 'Unavailable',
     rating: 5,
@@ -30,6 +34,7 @@ export const cars = [
   {
     id: '5',
     name: 'Opala Turbo 1978',
+    imgSrc: '/opala-1978-turbo.png',
     nextReservation: '10/07',
     status: 'Available',
     rating: 3,
@@ -37,6 +42,7 @@ export const cars = [
   {
     id: '6',
     name: 'Fiat Uno 2013',
+    imgSrc: '/fiat-uno.png',
     nextReservation: '02/03',
     status: 'Unavailable',
     rating: 4,
