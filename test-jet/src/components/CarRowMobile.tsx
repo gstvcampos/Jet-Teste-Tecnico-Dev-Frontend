@@ -8,7 +8,7 @@ export default function CarRowMobile({ car }: { car: Car }) {
       <td>
         <div className="flex items-center gap-3">
           <div className="avatar">
-            <div className="mask h-12 w-12">
+            <div className="mask h-20 w-20">
               <Image
                 src={car.imgSrc}
                 width={500}
@@ -18,8 +18,8 @@ export default function CarRowMobile({ car }: { car: Car }) {
             </div>
           </div>
           <div className="flex flex-col">
-            <div className="font-bold">{car.name}</div>
-            <div className="font-bold">{car.nextReservation}</div>
+            <p className="font-semibold text-base">{car.name}</p>
+            <p className="text-sm text-gray-500">Next reservation: {car.nextReservation}</p>
             <Rating rating={car.rating} />
           </div>
         </div>

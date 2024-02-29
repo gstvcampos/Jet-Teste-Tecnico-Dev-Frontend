@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="overflow-x-auto">
       <table className="table">
-        <thead>
+        <thead className='text-gray-500'>
           <tr>
             <th>CAR</th>
             <th>NEXT RESERVATION</th>

@@ -18,12 +18,12 @@ export default function CarRow({ car }: { car: Car }) {
             </div>
           </div>
           <div>
-            <div className="font-bold">{car.name}</div>
+            <p className="text-sm">{car.name}</p>
           </div>
         </div>
       </td>
-      <td>{car.nextReservation}</td>
-      <td>{car.status}</td>
+      <td className='text-sm text-gray-500'>{car.nextReservation}</td>
+      <td className='text-sm'>{car.status}</td>
       <td>
         <Rating rating={car.rating} />
       </td>
