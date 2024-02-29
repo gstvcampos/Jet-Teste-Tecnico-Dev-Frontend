@@ -9,7 +9,7 @@ export default function StatusCarTagDesktop({
   const status = isCarAvailable(reservations)
 
   return (
-    <td>
+    <td className="hidden md:table-cell">
       <span
         className={cn(
           'badge rounded-md font-medium text-xs',

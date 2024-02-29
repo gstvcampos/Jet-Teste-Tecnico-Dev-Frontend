@@ -13,7 +13,7 @@ export default function StatusCarTagMobile({
   return (
     <span
       className={cn(
-        'absolute rounded-full top-1 left-1',
+        'absolute md:hidden rounded-full top-1 left-1',
         status === 'Available' ? 'bg-green-600' : 'bg-red-600',
       )}
     >

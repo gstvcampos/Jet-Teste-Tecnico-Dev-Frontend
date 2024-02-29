@@ -1,3 +1,4 @@
+import CarRow from '@/components/CarRow'
 import CarRowDesktop from '@/components/CarRowDesktop'
 import CarRowMobile from '@/components/CarRowMobile'
 import MaxWidthWrapper from '@/components/MaxWidthWrapper'
@@ -18,10 +19,7 @@ export default function Home() {
         </thead>
         <tbody>
           {cars.map((car) => (
-            <CarRowDesktop car={car} key={car.id} />
-          ))}
-          {cars.map((car) => (
-            <CarRowMobile car={car} key={car.id} />
+            <CarRow car={car} key={car.id} />
           ))}
         </tbody>
       </table>
