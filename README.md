@@ -1,27 +1,26 @@
-# Teste-Técnico-Dev-Frontend-Jr
-## Descrição da vaga
-Desenvolvedor frontend júnior, com atuação remota, em regime CLT, com salário inicial de R$ 2.000,00 + benefícios ( Auxílio home-office -> R$ 300,00 + Vale alimentação -> valor base * total de dias úteis do mês)
-## Descrição do teste técnico
-Criar uma aplicação web, responsiva, utilizando as tecnologias propostas, onde seja exibida em telas as versões do data-table, exposto no figma.
-A idéia nesta avaliação é avaliar a capacidade de resolução de problemas dos candidatos como também a criatividade nesse processo.
+## Projeto Desafio Front-end Gustavo Campos - Listar carros
 
-## Requisitos obrigatórios
-- NextJs (AppRouter)
-- TypeScript
-- Tailwind
-- Composition Pattern
-- Componetização
-- GitFlow
-- Deploy na vercel
+Este projeto é uma aplicação que lista todos os carros disponiveis e indisponiveis para locação 
 
-## O que será avaliado:
-- Capacidade de resolução de problemas
-- Organização de código
-- Criatividade
-- Responsividade dos componentes
-- Desempenho da aplicação
-- Utilização das tecnologias obrigatórias
-- Nota de avaliação do Lighthouse (Google)
+## Tecnologias Utilizadas
 
-  ## Figma
-  Link: [`Figma`](https://www.figma.com/file/pXIEbENrC64kRCMbvctXnv/Teste-T%C3%A9cnico-Desenvolvedor-Jr.-Front-End?type=design&node-id=0-1&mode=design)
+Front-end: Next.js e Tailwind CSS
+
+## Funcionalidades
+
+- Listar todos os carros disponíveis para locação
+- Exibir disponibilidade atual do carro
+- Exibir todos detalhes do carro
+- Exibir data da proximo reserva
+
+
+## Iniciar projeto
+
+1. Clone o repositório.
+2. Em seguida, acesse o diretório do projeto "cd test-jet"
+3. Instale as dependências "npm install"
+4. Execute o "npm run dev" para iniciar a aplicação em modo de desenvolvimento
+
+[Projeto live](https://jet-teste-tecnico-dev-frontend-three.vercel.app/)
+
+[Figma](https://www.figma.com/file/pXIEbENrC64kRCMbvctXnv/Teste-T%C3%A9cnico-Desenvolvedor-Jr.-Front-End?type=design&node-id=0-1&mode=design)
