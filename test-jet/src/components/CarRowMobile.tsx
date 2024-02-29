@@ -14,25 +14,26 @@ export default function CarRowMobile({ car }: { car: Car }) {
         <div className="flex items-center gap-3">
           <div className="avatar">
             <StatusCarTagMobile reservations={car.reservations} />
-            <div className="mask h-20 w-20">
+            <div className="mask h-[85px] w-[85px]">
               <Image
                 src={car.imgSrc}
-                width={500}
-                height={500}
-                alt="Picture of the author"
+                width={85}
+                height={85}
+                className="object-contain"
+                alt={`imagem do carro- ${car.imgSrc}`}
               />
             </div>
           </div>
-          <div className="flex flex-col justify-between">
+          <div className="flex flex-col">
             <p className="font-semibold text-base">{car.name}</p>
-            <p className="text-sm text-gray-500">
+            <p className="text-xs text-gray-500 py-1">
               Next reservation: {nextReservation}
             </p>
             <RatingCarTag rating={car.rating} />
           </div>
         </div>
       </td>
-      <th>
+      <th className="align-top px-0">
         <button className="btn btn-ghost">
           <ActionsICon />
         </button>

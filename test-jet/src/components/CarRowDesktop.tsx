@@ -16,9 +16,10 @@ export default function CarRowDesktop({ car }: { car: Car }) {
             <div className="mask h-12 w-12">
               <Image
                 src={car.imgSrc}
-                width={500}
-                height={500}
-                alt="Picture of the author"
+                width={48}
+                height={48}
+                className="object-contain"
+                alt={`imagem do carro- ${car.imgSrc}`}
               />
             </div>
           </div>
