@@ -1,6 +1,4 @@
 import CarRow from '@/components/CarRow'
-import CarRowDesktop from '@/components/CarRowDesktop'
-import CarRowMobile from '@/components/CarRowMobile'
 import MaxWidthWrapper from '@/components/MaxWidthWrapper'
 import { cars } from '@/db/cars'
 
