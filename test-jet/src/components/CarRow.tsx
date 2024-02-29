@@ -1,6 +1,7 @@
 import { Car } from '@/types/car'
 import Image from 'next/image'
 import Rating from './Rating'
+import StatusCarTagDesktop from './StatusCarTagDesktop'
 import { ActionsICon } from './icons/ActionsIcon'
 
 export default function CarRow({ car }: { car: Car }) {
@@ -25,7 +26,7 @@ export default function CarRow({ car }: { car: Car }) {
       </td>
       <td className='text-sm text-gray-500'>{car.nextReservation}</td>
       <td className='text-sm'>
-        <p className='badge text-green-800 bg-green-100 rounded-md font-medium text-xs'>{car.status}</p>
+       <StatusCarTagDesktop status={car.status}/>
       </td>
       <td>
         <Rating rating={car.rating} />
