@@ -1,6 +1,6 @@
 import { Car } from '@/types/car'
 import Image from 'next/image'
-import Rating from './Rating'
+import Rating from './RatingCarTag'
 import StatusCarTagMobile from './StatusCarTagMobile'
 import { ActionsICon } from './icons/ActionsIcon'
 

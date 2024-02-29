@@ -10,7 +10,7 @@ export default function StatusCarTagDesktop({
 
   return (
     <td>
-      <p
+      <span
         className={cn(
           'badge rounded-md font-medium text-xs',
           status === 'Available'
@@ -19,7 +19,8 @@ export default function StatusCarTagDesktop({
         )}
       >
         {status}
-      </p>
+      </span>
     </td>
   )
 }
+

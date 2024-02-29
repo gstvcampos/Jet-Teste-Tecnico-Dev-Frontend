@@ -1,10 +1,13 @@
+import { getNextReservationFormattedDate } from '@/lib/ultis'
 import { Car } from '@/types/car'
 import Image from 'next/image'
-import Rating from './Rating'
+import RatingCarTag from './RatingCarTag'
 import StatusCarTagDesktop from './StatusCarTagDesktop'
 import { ActionsICon } from './icons/ActionsIcon'
 
 export default function CarRowDesktop({ car }: { car: Car }) {
+  const nextReservation = getNextReservationFormattedDate(car.reservations)
+
   return (
     <tr className="hidden md:table-row">
       <td>
@@ -24,11 +27,9 @@ export default function CarRowDesktop({ car }: { car: Car }) {
           </div>
         </div>
       </td>
-      <td className="text-sm text-gray-500">{car.nextReservation}</td>
+      <td className="text-sm text-gray-500">{nextReservation}</td>
       <StatusCarTagDesktop reservations={car.reservations} />
-      <td>
-        <Rating rating={car.rating} />
-      </td>
+      <RatingCarTag rating={car.rating} />
       <th>
         <button className="btn btn-ghost">
           <ActionsICon />

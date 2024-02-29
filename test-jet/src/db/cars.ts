@@ -5,12 +5,12 @@ export const cars = [
     imgSrc: '/mini-cooper.png',
     reservations: [
       {
-        startDate: '2022-07-10',
-        endDate: '2022-07-15',
+        startDate: '2024-07-11',
+        endDate: '2024-08-15',
       },
       {
-        startDate: '2022-07-20',
-        endDate: '2022-07-25',
+        startDate: '2024-08-20',
+        endDate: '2024-08-25',
       },
     ],
     rating: 2,
@@ -21,12 +21,12 @@ export const cars = [
     imgSrc: '/celta-2000.png',
     reservations: [
       {
-        startDate: '2022-06-10',
-        endDate: '2022-06-15',
+        startDate: '2024-02-15',
+        endDate: '2024-03-15',
       },
       {
-        startDate: '2022-06-20',
-        endDate: '2022-06-25',
+        startDate: '2024-04-20',
+        endDate: '2024-04-20',
       },
     ],
     rating: 3,
@@ -37,12 +37,12 @@ export const cars = [
     imgSrc: '/fiat-147.png',
     reservations: [
       {
-        startDate: '2022-06-10',
-        endDate: '2022-06-15',
+        startDate: '2024-04-10',
+        endDate: '2024-05-10',
       },
       {
-        startDate: '2022-06-20',
-        endDate: '2022-06-25',
+        startDate: '2024-06-20',
+        endDate: '2024-07-20',
       },
     ],
     rating: 2,
@@ -53,12 +53,12 @@ export const cars = [
     imgSrc: '/marea-turbo.png',
     reservations: [
       {
-        startDate: '2022-09-01',
-        endDate: '2022-09-05',
+        startDate: '2024-02-10',
+        endDate: '2024-03-20',
       },
       {
-        startDate: '2022-09-10',
-        endDate: '2022-09-15',
+        startDate: '2024-04-15',
+        endDate: '2024-05-15',
       },
     ],
     rating: 5,
@@ -69,12 +69,12 @@ export const cars = [
     imgSrc: '/opala-1978-turbo.png',
     reservations: [
       {
-        startDate: '2022-10-01',
-        endDate: '2022-10-05',
+        startDate: '2024-02-13',
+        endDate: '2024-03-13',
       },
       {
-        startDate: '2022-10-10',
-        endDate: '2022-10-15',
+        startDate: '2024-04-18',
+        endDate: '2024-05-18',
       },
     ],
     rating: 3,
@@ -85,12 +85,12 @@ export const cars = [
     imgSrc: '/fiat-uno.png',
     reservations: [
       {
-        startDate: '2022-11-01',
-        endDate: '2022-11-05',
+        startDate: '2024-04-10',
+        endDate: '2024-05-10',
       },
       {
-        startDate: '2022-11-10',
-        endDate: '2022-11-15',
+        startDate: '2024-06-15',
+        endDate: '2024-07-15',
       },
     ],
     rating: 4,
