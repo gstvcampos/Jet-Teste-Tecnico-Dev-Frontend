@@ -25,9 +25,7 @@ export default function CarRowDesktop({ car }: { car: Car }) {
         </div>
       </td>
       <td className="text-sm text-gray-500">{car.nextReservation}</td>
-      <td className="text-sm">
-        <StatusCarTagDesktop status={car.status} />
-      </td>
+      <StatusCarTagDesktop reservations={car.reservations} />
       <td>
         <Rating rating={car.rating} />
       </td>

@@ -1,8 +1,12 @@
-export interface Car {
+export type Reservation = {
+  startDate: string
+  endDate: string
+}
+
+export type Car = {
   id: string
   name: string
   imgSrc: string
-  nextReservation: string
-  status: string
   rating: number
+  reservations: Reservation[]
 }
