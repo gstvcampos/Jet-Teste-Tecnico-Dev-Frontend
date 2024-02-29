@@ -1,16 +1,19 @@
+import { getNextReservationFormattedDate } from '@/lib/ultis'
 import { Car } from '@/types/car'
 import Image from 'next/image'
-import Rating from './RatingCarTag'
+import RatingCarTag from './RatingCarTag'
 import StatusCarTagMobile from './StatusCarTagMobile'
 import { ActionsICon } from './icons/ActionsIcon'
 
 export default function CarRowMobile({ car }: { car: Car }) {
+  const nextReservation = getNextReservationFormattedDate(car.reservations)
+
   return (
     <tr className="table-row md:hidden">
       <td>
         <div className="flex items-center gap-3">
           <div className="avatar">
-            <StatusCarTagMobile status={car.status} />
+            <StatusCarTagMobile reservations={car.reservations} />
             <div className="mask h-20 w-20">
               <Image
                 src={car.imgSrc}
@@ -20,12 +23,12 @@ export default function CarRowMobile({ car }: { car: Car }) {
               />
             </div>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col justify-between">
             <p className="font-semibold text-base">{car.name}</p>
             <p className="text-sm text-gray-500">
-              Next reservation: {car.nextReservation}
+              Next reservation: {nextReservation}
             </p>
-            <Rating rating={car.rating} />
+            <RatingCarTag rating={car.rating} />
           </div>
         </div>
       </td>

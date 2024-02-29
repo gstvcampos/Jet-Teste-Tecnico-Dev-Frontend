@@ -29,7 +29,9 @@ export default function CarRowDesktop({ car }: { car: Car }) {
       </td>
       <td className="text-sm text-gray-500">{nextReservation}</td>
       <StatusCarTagDesktop reservations={car.reservations} />
-      <RatingCarTag rating={car.rating} />
+      <td>
+        <RatingCarTag rating={car.rating} />
+      </td>
       <th>
         <button className="btn btn-ghost">
           <ActionsICon />
