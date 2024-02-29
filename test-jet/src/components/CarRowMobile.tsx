@@ -1,6 +1,7 @@
 import { Car } from '@/types/car'
 import Image from 'next/image'
 import Rating from './Rating'
+import StatusCarTagMobile from './StatusCarTagMobile'
 
 export default function CarRowMobile({ car }: { car: Car }) {
   return (
@@ -8,6 +9,7 @@ export default function CarRowMobile({ car }: { car: Car }) {
       <td>
         <div className="flex items-center gap-3">
           <div className="avatar">
+            <StatusCarTagMobile status={car.status}/>
             <div className="mask h-20 w-20">
               <Image
                 src={car.imgSrc}
