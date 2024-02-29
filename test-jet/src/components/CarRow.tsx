@@ -18,7 +18,9 @@ export default function CarRow({ car }: { car: Car }) {
             <div className="mask h-[85px] w-[85px] md:h-12 md:w-12">
               <Image
                 src={car.imgSrc}
-                fill
+                width={85}
+                height={85}
+                priority
                 className="object-contain"
                 alt={`imagem do carro- ${car.imgSrc}`}
               />
