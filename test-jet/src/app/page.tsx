@@ -5,7 +5,7 @@ import { cars } from '@/db/cars'
 export default function Home() {
   return (
     <MaxWidthWrapper>
-      <table className="table">
+      <table className="table shadow-md">
         <thead className="text-gray-500 bg-gray-50 hidden md:table-header-group">
           <tr>
             <th>CAR</th>
