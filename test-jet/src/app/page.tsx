@@ -1,4 +1,5 @@
 import CarRow from '@/components/CarRow'
+import CarRowMobile from '@/components/CarRowMobile'
 import { cars } from '@/db/cars'
 import { Car } from '@/types/car'
 
@@ -18,6 +19,9 @@ export default function Home() {
         <tbody>
           {cars.map((car) => (
             <CarRow car={car as Car} key={car.id} />
+          ))}
+          {cars.map((car) => (
+            <CarRowMobile car={car as Car} key={car.id} />
           ))}
         </tbody>
       </table>
