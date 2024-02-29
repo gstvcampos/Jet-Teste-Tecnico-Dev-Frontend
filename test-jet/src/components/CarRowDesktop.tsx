@@ -4,9 +4,9 @@ import Rating from './Rating'
 import StatusCarTagDesktop from './StatusCarTagDesktop'
 import { ActionsICon } from './icons/ActionsIcon'
 
-export default function CarRow({ car }: { car: Car }) {
+export default function CarRowDesktop({ car }: { car: Car }) {
   return (
-    <tr>
+    <tr className="hidden md:table-row">
       <td>
         <div className="flex items-center gap-3">
           <div className="avatar">
@@ -20,19 +20,21 @@ export default function CarRow({ car }: { car: Car }) {
             </div>
           </div>
           <div>
-            <p className='text-sm'>{car.name}</p>
+            <p className="text-sm">{car.name}</p>
           </div>
         </div>
       </td>
-      <td className='text-sm text-gray-500'>{car.nextReservation}</td>
-      <td className='text-sm'>
-       <StatusCarTagDesktop status={car.status}/>
+      <td className="text-sm text-gray-500">{car.nextReservation}</td>
+      <td className="text-sm">
+        <StatusCarTagDesktop status={car.status} />
       </td>
       <td>
         <Rating rating={car.rating} />
       </td>
       <th>
-        <button className="btn btn-ghost btn-xs"><ActionsICon/></button>
+        <button className="btn btn-ghost btn-xs">
+          <ActionsICon />
+        </button>
       </th>
     </tr>
   )

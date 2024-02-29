@@ -1,30 +1,32 @@
-import CarRow from '@/components/CarRow'
+import CarRowDesktop from '@/components/CarRowDesktop'
 import CarRowMobile from '@/components/CarRowMobile'
+import MaxWidthWrapper from '@/components/MaxWidthWrapper'
 import { cars } from '@/db/cars'
-import { Car } from '@/types/car'
 
 export default function Home() {
   return (
-    <div className="overflow-x-auto">
-      <table className="table">
-        <thead className='text-gray-500 bg-gray-50'>
-          <tr>
-            <th>CAR</th>
-            <th>NEXT RESERVATION</th>
-            <th>STATUS</th>
-            <th>RATING</th>
-            <th>ACTIONS</th>
-          </tr>
-        </thead>
-        <tbody>
-          {cars.map((car) => (
-            <CarRow car={car as Car} key={car.id} />
-          ))}
-          {cars.map((car) => (
-            <CarRowMobile car={car as Car} key={car.id} />
-          ))}
-        </tbody>
-      </table>
-    </div>
+    <MaxWidthWrapper>
+      <div className="overflow-x-auto">
+        <table className="table">
+          <thead className="text-gray-500 bg-gray-50 hidden md:table-header-group">
+            <tr>
+              <th>CAR</th>
+              <th>NEXT RESERVATION</th>
+              <th>STATUS</th>
+              <th>RATING</th>
+              <th>ACTIONS</th>
+            </tr>
+          </thead>
+          <tbody>
+            {cars.map((car) => (
+              <CarRowDesktop car={car} key={car.id} />
+            ))}
+            {cars.map((car) => (
+              <CarRowMobile car={car} key={car.id} />
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </MaxWidthWrapper>
   )
 }
