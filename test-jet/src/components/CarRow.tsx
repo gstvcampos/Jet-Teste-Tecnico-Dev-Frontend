@@ -49,7 +49,7 @@ export default function CarRow({ car }: { car: Car }) {
         <RatingCarTag rating={car.rating} />
       </td>
       <th>
-        <button className="btn btn-ghost">
+        <button className="btn btn-ghost" aria-label="actions">
           <ActionsICon />
         </button>
       </th>
