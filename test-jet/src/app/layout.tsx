@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="pt-bt" className="!scroll-smooth" data-theme="light">
       <body className={cn(inter.className, 'font-sans antialiased')}>
-        <main className="relative flex min-h-dvh flex-col text-gray-900">{children}</main>
+        <main className="relative flex min-h-dvh flex-col text-[#111928]">{children}</main>
       </body>
     </html>
   )
