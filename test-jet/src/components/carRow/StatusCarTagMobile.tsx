@@ -1,7 +1,7 @@
 import { cn, isCarAvailable } from '@/lib/ultis'
 import { Reservation } from '@/types/car'
-import { AvailableIcon } from './icons/AvailableIcon'
-import { UnavailableIcon } from './icons/UnavailableIcon'
+import { AvailableIcon } from '../icons/AvailableIcon'
+import { UnavailableIcon } from '../icons/UnavailableIcon'
 
 export default function StatusCarTagMobile({
   reservations,

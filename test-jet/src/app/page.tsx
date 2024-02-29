@@ -1,5 +1,5 @@
-import CarRow from '@/components/CarRow'
 import MaxWidthWrapper from '@/components/MaxWidthWrapper'
+import CarRow from '@/components/carRow/CarRow'
 import { cars } from '@/db/cars'
 
 export default function Home() {
