@@ -32,7 +32,7 @@ export default function CarRowDesktop({ car }: { car: Car }) {
         <Rating rating={car.rating} />
       </td>
       <th>
-        <button className="btn btn-ghost btn-xs">
+        <button className="btn btn-ghost">
           <ActionsICon />
         </button>
       </th>

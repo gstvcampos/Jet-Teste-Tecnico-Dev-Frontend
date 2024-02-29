@@ -30,7 +30,7 @@ export default function CarRowMobile({ car }: { car: Car }) {
         </div>
       </td>
       <th>
-        <button className="btn btn-ghost btn-xs">
+        <button className="btn btn-ghost">
           <ActionsICon />
         </button>
       </th>
