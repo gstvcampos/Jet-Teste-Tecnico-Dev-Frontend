@@ -44,8 +44,8 @@ export function getNextReservationFormattedDate(
     return '--/--'
   }
 
-  const day = nextReservation.getDate() + 1
-  const month = nextReservation.getMonth() + 1
+  const day = nextReservation.getUTCDate()
+  const month = nextReservation.getUTCMonth() + 1
 
   const formattedDay = day < 10 ? `0${day}` : day
   const formattedMonth = month < 10 ? `0${month}` : month

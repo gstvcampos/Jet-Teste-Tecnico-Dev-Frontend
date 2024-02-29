@@ -5,7 +5,7 @@ export const cars = [
     imgSrc: '/mini-cooper.png',
     reservations: [
       {
-        startDate: '2024-07-11',
+        startDate: '2024-03-01',
         endDate: '2024-08-15',
       },
       {
@@ -13,7 +13,7 @@ export const cars = [
         endDate: '2024-08-25',
       },
     ],
-    rating: 2,
+    rating: 5,
   },
   {
     id: '2',
